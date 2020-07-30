@@ -25,6 +25,6 @@ public class App {
         Alien obj2 = (Alien)factory.getBean("alien");
         System.out.println( "Hello World!" );
         obj2.code();
-        System.out.println(obj1.age);
+        System.out.println(obj2.age);
     }
 }
