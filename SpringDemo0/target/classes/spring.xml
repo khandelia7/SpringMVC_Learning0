@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- By Default it is singleton -->
-	<bean id="alien" class="com.telusko.SpringDemo0.Alien" scope="prototype">
-		<property name="age" value="10"></property>
+	<bean id="alien" class="com.telusko.SpringDemo0.Alien">
+		<constructor-arg value="12" ></constructor-arg>
+		<!-- <property name="age" value="10"></property> -->
 		<property name="laptop" ref="laptop"></property>
 	</bean>
 	
 	<bean id="laptop" class="com.telusko.SpringDemo0.Laptop" >
-		
 	</bean>
 	
 </beans>

@@ -6,13 +6,17 @@ public class Alien {
 	
 	private Laptop laptop;
 	
-	public Alien() {
-		System.out.println("Alien Object Created");
-	}
+//	public Alien() {
+//		System.out.println("Alien Object Created");
+//	}
 	
 	public void code() {
 		System.out.println("I am Coding...!");
 		laptop.compile();
+	}
+
+	public Alien(int age) {
+		this.age = age;
 	}
 
 	/**
