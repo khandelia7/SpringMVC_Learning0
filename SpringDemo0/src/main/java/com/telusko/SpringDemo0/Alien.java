@@ -4,8 +4,15 @@ public class Alien {
 	
 	private int age;
 	
+	private Laptop laptop;
+	
+	public Alien() {
+		System.out.println("Alien Object Created");
+	}
+	
 	public void code() {
 		System.out.println("I am Coding...!");
+		laptop.compile();
 	}
 
 	/**
@@ -20,6 +27,20 @@ public class Alien {
 	 */
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	/**
+	 * @return the laptop
+	 */
+	public Laptop getLaptop() {
+		return laptop;
+	}
+
+	/**
+	 * @param laptop the laptop to set
+	 */
+	public void setLaptop(Laptop laptop) {
+		this.laptop = laptop;
 	}
 	
 }
