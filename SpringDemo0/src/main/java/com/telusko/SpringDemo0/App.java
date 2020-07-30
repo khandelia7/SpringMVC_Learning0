@@ -17,14 +17,18 @@ public class App {
     	ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
     	
     	Alien obj1 = (Alien)factory.getBean("alien");
-        System.out.println( "Hello World!" );
         obj1.code();
-        obj1.age = 15;
-        System.out.println(obj1.age);
+        System.out.println(obj1.getAge());
         
-        Alien obj2 = (Alien)factory.getBean("alien");
-        System.out.println( "Hello World!" );
-        obj2.code();
-        System.out.println(obj2.age);
+//    	Alien obj1 = (Alien)factory.getBean("alien");
+//        System.out.println( "Hello World!" );
+//        obj1.code();
+//        obj1.age = 15;
+//        System.out.println(obj1.age);
+//        
+//        Alien obj2 = (Alien)factory.getBean("alien");
+//        System.out.println( "Hello World!" );
+//        obj2.code();
+//        System.out.println(obj2.age);
     }
 }
