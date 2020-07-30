@@ -4,20 +4,23 @@ public class Alien {
 	
 	private int age;
 	
-	private Laptop laptop;
+//	private Laptop laptop;
 	
-//	public Alien() {
-//		System.out.println("Alien Object Created");
-//	}
+	private Computer computer;
+	
+	public Alien() {
+		System.out.println("Alien Object Created");
+	}
 	
 	public void code() {
 		System.out.println("I am Coding...!");
-		laptop.compile();
+		//laptop.compile();
+		computer.compile();
 	}
 
-	public Alien(int age) {
-		this.age = age;
-	}
+//	public Alien(int age) {
+//		this.age = age;
+//	}
 
 	/**
 	 * @return the age
@@ -34,17 +37,30 @@ public class Alien {
 	}
 
 	/**
-	 * @return the laptop
+	 * @return the computer
 	 */
-	public Laptop getLaptop() {
-		return laptop;
+	public Computer getComputer() {
+		return computer;
 	}
 
 	/**
-	 * @param laptop the laptop to set
+	 * @param computer the computer to set
 	 */
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setComputer(Computer computer) {
+		this.computer = computer;
 	}
-	
+
+//	/**
+//	 * @return the laptop
+//	 */
+//	public Laptop getLaptop() {
+//		return laptop;
+//	}
+//
+//	/**
+//	 * @param laptop the laptop to set
+//	 */
+//	public void setLaptop(Laptop laptop) {
+//		this.laptop = laptop;
+//	}
 }
